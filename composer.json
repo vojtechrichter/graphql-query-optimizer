@@ -23,6 +23,10 @@
     "scripts": {
         "phpstan": "vendor/bin/phpstan analyse -l 10 src",
         "cs": "vendor/bin/phpcs --standard=PSR12 src",
-        "cs-fix": "vendor/bin/phpcbf --standard=PSR12 src"
+        "cs-fix": "vendor/bin/phpcbf --standard=PSR12 src",
+        "lint": [
+            "@phpstan",
+            "@cs"
+        ]
     }
 }
