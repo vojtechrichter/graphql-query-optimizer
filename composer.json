@@ -1,0 +1,28 @@
+{
+    "name": "vojtechrichter/graphql-query-optimizer",
+    "autoload": {
+        "psr-4": {
+            "GraphqlQueryOptimizer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "vojtechrichter",
+            "email": "vojta3218@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.4",
+        "webonyx/graphql-php": "^15.20",
+        "symfony/console": "^7.3"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.1",
+        "squizlabs/php_codesniffer": "^3.13"
+    },
+    "scripts": {
+        "phpstan": "vendor/bin/phpstan analyse -l 10 src",
+        "cs": "vendor/bin/phpcs --standard=PSR12 src",
+        "cs-fix": "vendor/bin/phpcbf --standard=PSR12 src"
+    }
+}
