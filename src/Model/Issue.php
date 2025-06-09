@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace GraphqlQueryOptimizer\Model;
 
+use GraphQL\Language\AST\Location;
 use GraphQL\Language\SourceLocation;
 
 final class Issue
